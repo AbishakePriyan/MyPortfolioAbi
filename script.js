@@ -51,3 +51,25 @@ function closeMenu() {
   document.getElementById("sideMenuOverlay").classList.remove("active");
 }
 
+const toggleBtn = document.querySelector('.toggle-btn');
+const sidebar = document.querySelector('.sidebar');
+
+// Open menu
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.add('active');
+});
+
+// Close when clicking X inside sidebar
+document.querySelector('.close-btn').addEventListener('click', () => {
+  sidebar.classList.remove('active');
+});
+
+// Close when clicking outside sidebar
+document.addEventListener('click', (event) => {
+  if (
+    !sidebar.contains(event.target) &&
+    !toggleBtn.contains(event.target)
+  ) {
+    sidebar.classList.remove('active');
+  }
+});
