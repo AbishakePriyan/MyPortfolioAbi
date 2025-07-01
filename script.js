@@ -26,8 +26,28 @@ function SendMail(event) {
   });
 }
 
-function toggleMenu() {
-  const nav = document.getElementById("navbar");
-  nav.classList.toggle("active");
+function toggleSideMenu() {
+  const menu = document.getElementById('sideMenu');
+  menu.classList.toggle('active');
+}
+
+// Close when clicking outside
+document.addEventListener('click', function (event) {
+  const menu = document.getElementById('sideMenu');
+  const toggle = document.querySelector('.menu-toggle-btn');
+
+  if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+    menu.classList.remove('active');
+  }
+});
+
+function openMenu() {
+  document.getElementById("sideMenu").classList.add("active");
+  document.getElementById("sideMenuOverlay").classList.add("active");
+}
+
+function closeMenu() {
+  document.getElementById("sideMenu").classList.remove("active");
+  document.getElementById("sideMenuOverlay").classList.remove("active");
 }
 
