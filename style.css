@@ -232,6 +232,7 @@ span{
 }
 
 .typing-text span::before{
+    content: "software Developer";
     color: #e9da0d;
     animation: words 10s infinite;
 }
