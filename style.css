@@ -45,6 +45,7 @@ header{
     cursor: pointer;
     transition: 0.5s ease;
     padding-right: 45rem;
+    position: fixed;
     
 }
 
