@@ -25,3 +25,9 @@ function SendMail(event) {
     console.error("EmailJS error:", error);
   });
 }
+
+function toggleMenu() {
+  const nav = document.getElementById("navbar");
+  nav.classList.toggle("active");
+}
+

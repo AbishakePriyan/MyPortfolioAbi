@@ -880,3 +880,52 @@ span{
   }
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 3rem;
+  color: #e9da0d;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* Responsive Nav & Toggle Behavior */
+@media (max-width: 995px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #111;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    border-top: 2px solid #e9da0d;
+  }
+
+  #navbar.active {
+    display: flex;
+  }
+
+  #navbar a {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    border-left: 4px solid transparent;
+    transition: 0.3s;
+  }
+
+  #navbar a:hover {
+    background-color: #1a1a1a;
+    border-left: 4px solid #e9da0d;
+    color: #e9da0d;
+  }
+}
+
