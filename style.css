@@ -221,6 +221,25 @@ span{
     box-shadow: 0 0 25px #e9da0d;
 }
 
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    color: #e9da0d;
+    animation: words 10s infinite;
+}
+
+.typing-text span::after{
+    display: none;
+}
+
 @keyframes cursor{
     to{
         border-left: 3px solid #e9da0d;
