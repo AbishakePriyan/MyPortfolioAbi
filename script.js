@@ -13,7 +13,7 @@ function SendMail(event) {
 
   var params = {
     from_name : document.getElementById("from_name").value,
-    email_id : document.getElementById("from_email").value,
+    from_email : document.getElementById("from_email").value,
     message : document.getElementById("message").value
   }
 
