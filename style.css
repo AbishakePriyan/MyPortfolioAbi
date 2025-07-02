@@ -901,7 +901,7 @@ span{
   width: 16.66%; /* 1/6th of screen */
   height: 100%;
   background-color: #161616;
-  padding: 2rem;
+  padding: 2rem 3rem;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
   transition: left 0.3s ease;
   z-index: 1500;
@@ -911,14 +911,20 @@ span{
 }
 
 .side-menu a {
-  font-size: 1.6rem;
-  color: #e9da0d;
-  text-decoration: none;
-  transition: 0.2s;
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: 0.3s ease;
+  font-size: medium;
+  color: #ccc;
+  
 }
 
 .side-menu a:hover {
-  color: white;
+  background-color: #e9da0d;
+  color: rgb(0, 0, 0);
+  transform: scale3d(1.03);
+  box-shadow: 0 0 25px #e9da0d;
 }
 
 .side-menu.active {
@@ -941,24 +947,6 @@ span{
   .side-menu {
     width: 70%; /* expand side menu a bit on mobile */
   }
-}
-
-/* Default Sidebar: hidden off screen */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -100%; /* Hide initially */
-  height: 100vh;
-  width: 16.6667%; /* 1/6th of the screen */
-  background-color: #111;
-  padding: 2rem 1rem;
-  transition: left 0.3s ease-in-out;
-  z-index: 2000;
-}
-
-/* When menu is open */
-.sidebar.active {
-  left: 0;
 }
 
 
