@@ -53,26 +53,6 @@ header{
     transform: scale(1.1);
 }
 
-.back-vid{
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-@media (max-aspect-ratio: 16/9){
-  .back-vid{
-    width: auto;
-    height: 100%;
-  }
-}
-
-@media (min-aspect-ratio: 16/9){
-  .back-vid{
-    width: 100%;
-    height: auto;
-  }
-}
 
 nav a{
     font-size: 1.8rem;
@@ -155,31 +135,26 @@ span{
     font-size: 1.6rem;
 }
 
-.home-img{
-    width: 900px;
-    height: 450px;
-    background-color: none;
-    position: relative;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    box-shadow: 0 0 10px #e9da0d;
-    transition: 0.5s;
+.hero-img{
+  width: 400px;
+  height: 400px;
+  background-color: none;
+  position:relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px yellow;
+  transition: 0.5s;
 }
 
-.home-img img{
-    position: relative;
-    width: 20vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #e9da0d;
-    cursor: pointer;
-    transition: 0.2s linear;
+.hero-img:hover{
+  box-shadow: 0 0 25px yellow;
 }
 
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+.hero-img img{
+  position: relative;
+  width: 85%;
 }
 
 .social-icons a{
